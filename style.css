@@ -1,0 +1,9 @@
+.vjs-overlay {
+    background: #000000a1;
+    padding: 14px 18px;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+    border-radius: 4px;
+    margin-right: 10px;
+}
