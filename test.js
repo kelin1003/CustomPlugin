@@ -1,1 +1,1 @@
-console.log('plugin initiated');
+console.log('plugin initiated!!');
