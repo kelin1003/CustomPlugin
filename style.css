@@ -25,3 +25,9 @@
     display: flex;
     justify-content: center;
 }
+
+.vjs-text-track-cue {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
