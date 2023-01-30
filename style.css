@@ -22,4 +22,6 @@
 
 .vjs-text-track-cue {
     text-align: center !important;
+    display: flex;
+    justify-content: center;
 }
