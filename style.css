@@ -20,13 +20,13 @@
     line-height: 0.6;
 }
 
-.vjs-text-track-cue {
+.vjs-text-track-cue.vjs-text-track-cue-en {
     text-align: center !important;
     display: flex;
     justify-content: center;
 }
 
-.vjs-text-track-cue {
+.vjs-text-track-cue.vjs-text-track-cue-en {
     text-align: center;
     display: flex;
     justify-content: center;
