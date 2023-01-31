@@ -1,14 +1,16 @@
 .vjs-overlay {
-    background: rgb(0 0 0 / 55%);
+    background: rgba(0,0,0,0.96);
     padding: 14px 18px;
     margin-top: 10px;
     float: right;
     position: relative;
     border-radius: 4px;
     margin-right: 10px;
+    font-size: 12px;
+    line-height: 16px;
 }
 
-.vjs-icon-cancel {
+.vjs-disclaimer-close-btn {
     position: absolute;
     top: -6px;
     right: -9px;

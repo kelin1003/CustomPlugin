@@ -19,14 +19,36 @@ videojs.registerPlugin('pluginDev', function() {
     player.controlBar.subsCapsButton.on('click', function() {
         // Check if user was already displayed disclaimer when first clicked on captions button
         var alreadyDisplayed = window.localStorage.getItem("ajCapsDisclaimerDisplayed");
-        // if (!alreadyDisplayed) {
+        if (!alreadyDisplayed) {
             window.localStorage.setItem("ajCapsDisclaimerDisplayed", true);
+            player.el().removeChild(overlay);
             player.el().appendChild(overlay);
-            // player.setTimeout(function(){
-            //     player.el().removeChild(overlay);
-            // }, 5000);
-        // }
+            player.setTimeout(function(){
+                player.el().removeChild(overlay);
+            }, 5000);
+        }
     })
+
+
+    // Add info button for manually seeing the disclaimer
+    const Button = videojs.getComponent('Button')
+    const infoIcon = document.createElement('span');
+    infoIcon.innerHTML = 'ⓘ';
+
+    const button = new Button(player, {
+        controlText: 'Captions Disclaimer',
+        clickHandler: function() {
+            player.el().removeChild(overlay);
+            player.el().appendChild(overlay);
+            player.setTimeout(function(){
+                player.el().removeChild(overlay);
+            }, 5000);
+        },
+    });
+
+    button.el().appendChild(infoIcon);
+
+    player.getChild('ControlBar').addChild(button, {}, 10);
   });
 
 
