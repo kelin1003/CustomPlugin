@@ -7,6 +7,7 @@ videojs.registerPlugin('pluginDev', function() {
     var closeBtn = document.createElement('button');
     var btnSpan  = document.createElement('span');
     btnSpan.className = 'vjs-icon-cancel';
+    closeBtn.appendChild(btnSpan);
     overlay.appendChild(closeBtn);
 
     // Add event listener on Close Button
@@ -18,13 +19,13 @@ videojs.registerPlugin('pluginDev', function() {
     player.controlBar.subsCapsButton.on('click', function() {
         // Check if user was already displayed disclaimer when first clicked on captions button
         var alreadyDisplayed = window.localStorage.getItem("ajCapsDisclaimerDisplayed");
-        if (!alreadyDisplayed) {
+        // if (!alreadyDisplayed) {
             window.localStorage.setItem("ajCapsDisclaimerDisplayed", true);
             player.el().appendChild(overlay);
-            player.setTimeout(function(){
-                player.el().removeChild(overlay);
-            }, 5000);
-        }
+            // player.setTimeout(function(){
+            //     player.el().removeChild(overlay);
+            // }, 5000);
+        // }
     })
   });
 

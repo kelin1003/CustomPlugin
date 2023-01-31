@@ -11,13 +11,13 @@
 .vjs-icon-cancel {
     position: absolute;
     top: -6px;
-    right: -3px;
-    background: white;
+    right: -9px;
     border-radius: 50%;
-    color: black;
+    color: #000;
     padding: 3px;
-    font-size: 10px;
-    line-height: 0.6;
+    font-size: 20px;
+    color: white;
+    line-height: .6;
 }
 
 .vjs-text-track-cue.vjs-text-track-cue-en {
