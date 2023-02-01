@@ -8,6 +8,7 @@
     margin-right: 10px;
     font-size: 12px;
     line-height: 16px;
+    max-width: 40%;
 }
 
 .vjs-text-track-cue.vjs-text-track-cue-en > div {
