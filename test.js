@@ -46,6 +46,7 @@ videojs.registerPlugin('pluginDev', function() {
 
     const button = new ButtonComponent(player, {
         controlText: 'Captions Disclaimer',
+        className: 'vjs-disclaimer-close-btn',
         clickHandler: function() {
             if (!player.getChildById(overlayComponent)) {
                 player.addChild(overlayComponent);
