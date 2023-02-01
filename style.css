@@ -10,16 +10,36 @@
     line-height: 16px;
 }
 
+.vjs-text-track-cue.vjs-text-track-cue-en > div {
+    background: rgba(0,0,0,0.96);
+    padding: 10px 12px;
+    text-align: center;
+    white-space: initial;
+    font-size: 16px;
+}
+
+@media only screen 
+  and (max-width: 375px) { 
+    .vjs-text-track-cue.vjs-text-track-cue-en > div {
+        padding: 8px 10px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
 .vjs-disclaimer-close-btn {
     position: absolute;
-    top: -6px;
-    right: -9px;
-    border-radius: 50%;
-    color: #000;
-    padding: 3px;
-    font-size: 20px;
+    top: -5PX;
+    right: -5PX;
+    font-size: 16px;
     color: white;
-    line-height: .6;
+    line-height: 1;
+    padding: 0px;
+    margin: 0px;
+}
+
+.vjs-disclaimer-close-btn .vjs-icon-cancel {
+    font-size: 16px;
 }
 
 .vjs-text-track-cue.vjs-text-track-cue-en {
